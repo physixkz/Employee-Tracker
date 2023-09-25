@@ -32,11 +32,11 @@ VALUES
     ('Rocket', 'Raccoon', 1, 5),
     ('Phil', 'Coulson', 4, 1),
     ('Natasha', 'Romanoff', 3, 2),
-    ('T'Challa', 'Wakanda', 2, 5),
+    ('T''Challa', 'Wakanda', 2, 5), -- Fixed here with double single quotes
     ('Bucky', 'Barnes', 5, 1),
     ('Groot', 'Guardiansbane', 3, 1),
     ('Shuri', 'Wakanda', 4, 4),
     ('Davos', 'Seaworth', 4, null),
     ('Carol', 'Danvers', 2, null),
     ('Drax', 'Galaxy', 3, null),
-    ('Nick', 'Fury', 5, null);
+    ('Nick', 'Fury', 5, null)
