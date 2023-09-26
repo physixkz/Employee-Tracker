@@ -1,24 +1,22 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const Department = require('./department'); // Import the Department model
+const Department = require('./department');
 
 class Role extends Model {}
 
 Role.init(
   {
-    // Define attributes for the Role model
     title: {
       type: DataTypes.STRING,
-      allowNull: false, // Ensure title is not nullable
+      allowNull: false,
     },
     salary: {
       type: DataTypes.DECIMAL(10, 2),
-      allowNull: false, // Ensure salary is not nullable
+      allowNull: false,
     },
-    // Add a foreign key reference to department_id
     department_id: {
       type: DataTypes.INTEGER,
-      allowNull: false, // Make sure department_id is not nullable
+      allowNull: false,
     },
   },
   {
@@ -30,7 +28,6 @@ Role.init(
   }
 );
 
-// Define the association
-Role.belongsTo(Department, { foreignKey: 'department_id' }); // Define the association
+Role.belongsTo(Department, { foreignKey: 'department_id' });
 
 module.exports = Role;
